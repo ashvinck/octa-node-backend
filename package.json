@@ -10,7 +10,8 @@
     "dev:staging": "pm2 start ecosystem.config.cjs",
     "dev:test": "nodemon --env-file .env.development --ext js,ts,json ./dist/index.js",
     "dev:prod": "tsx --watch --env-file .env.production src/index.ts",
-    "build": "npx tsup src/index.ts --format esm --out-dir dist --splitting"
+    "build": "npx tsup src/index.ts --format esm --out-dir dist --splitting",
+    "postinstall": "npm install typescript"
   },
   "keywords": [],
   "author": "",
