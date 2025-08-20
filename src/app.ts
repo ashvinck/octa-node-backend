@@ -65,7 +65,7 @@ export async function setupApp() {
   app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
   app.get('/', (req, res) => {
-    res.status(200).send('🙋‍♂️ Hello! Welcome to Pheezee Backend!');
+    res.status(200).send('🙋‍♂️ Hello! Welcome to My Fort Backend!');
   });
 
   app.use('/', publicRouter);
